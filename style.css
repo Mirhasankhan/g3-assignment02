@@ -278,6 +278,11 @@ li {
         align-items: center;
         
     }
+    .our-architectures{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .architectures{
         flex-direction: column;
     }
