@@ -28,7 +28,7 @@ body {
 /* Max-Width Set Up */
 .header,
 .banner,
-.main, .footer {
+.main, .footer, .our-architectures{
     width: 100%;
     max-width: 53em;
     margin: 0 auto;
@@ -159,6 +159,32 @@ li {
     bottom: 10px;
     padding: 1.5em 1.5em;
 }
+/* bonus section (our some architecture) */
+.architectures{
+    margin: 20px 0;
+    display: flex;
+    gap: 1em;
+}
+.building{
+    width: 100%;
+    position: relative;
+}
+.building img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.architecture-detail{
+    display: none;
+    position: absolute;
+    top: 40px;
+}
+.building:hover .architecture-detail{
+    display: block;
+    color: greenyellow;
+    font-weight: 700;
+    padding: 10px;
+}
 /* some facts styles */
 .achievement-section{
     margin: 2em 0;
@@ -174,14 +200,12 @@ li {
     text-align: center;
     margin: 2em 0;
     border-radius: 0.3em;
-    transition: border 0.2s ease-in 1s;
+    
 }
 .achievement:hover{
     border: 1px solid red;
 }
-.achievement:hover .achieve-img{
-    transform: rotate(360deg);
-}
+
 .total-awards{
     color: var(--black);
     font-weight: 500;
@@ -253,6 +277,9 @@ li {
         width: 50%;
         align-items: center;
         
+    }
+    .architectures{
+        flex-direction: column;
     }
     .sponsors{
         flex-direction: column;
