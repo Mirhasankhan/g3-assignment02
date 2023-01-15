@@ -174,10 +174,17 @@ li {
     text-align: center;
     margin: 2em 0;
     border-radius: 0.3em;
+    transition: border 0.2s ease-in 1s;
+}
+.achievement:hover{
+    border: 1px solid red;
+}
+.achievement:hover .achieve-img{
+    transform: rotate(360deg);
 }
 .total-awards{
     color: var(--black);
-    font-weight: 200;
+    font-weight: 500;
 }
 .prize{
     font-size: 0.6em;
@@ -234,12 +241,25 @@ li {
         left: 0;
         bottom: 0;
     }
+    .achievement-section{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
     .achievements{
         flex-direction: column;
+        width: 50%;
+        align-items: center;
+        
     }
     .sponsors{
         flex-direction: column;
+        align-items: center;        
+        gap: 1em;
+    }
+    .sponsors img{
         width: 50%;
-        justify-content: center;
     }
 } 
