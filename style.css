@@ -213,11 +213,33 @@ li {
     font-size: 0.6em;
 }
 
- /* @media screen and (max-width: 576px) {
-    .features{
+ @media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 0.2em;
+    }
+     .architect-list{
         flex-direction: column-reverse;
     }
-    .feature-thumbnails{
+    .architect-thumbnails{
         grid-template-columns: repeat(1, 1fr);
     }
-}  */
+    .features-list{
+        flex-direction: column;
+    }
+    .year-btn{                
+        left: 0;
+        bottom: 0;
+    }
+    .achievements{
+        flex-direction: column;
+    }
+    .sponsors{
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+    }
+} 
