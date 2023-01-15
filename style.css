@@ -7,58 +7,73 @@
     --orange: #FF900E;
     --white: #ffffff;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 /* default font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200;1,400&family=Roboto:ital@1&display=swap');
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
 }
+
 /* header and banner styles here */
-.container{
-    background-color:rgba(255, 144, 14, 0.1);
-    
+.container {
+    background-color: rgba(255, 144, 14, 0.1);
+
 }
+
 /* header area */
-.header, .banner, .main{
+.header,
+.banner,
+.main, .footer {
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;  
-   
+    max-width: 800px;
+    margin: 0 auto;
+
 }
-.header-title{
+
+.header-title {
     color: var(--black);
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-   
+
 }
-nav ul{
-    list-style: none;  
-    display: flex;  
-    gap: 30px;    
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
-li{
+
+li {
     font-size: 0.8em;
 }
-.banner{
+
+.banner {
     text-align: center;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4em;
     color: var(--black);
 }
-.description{  
+
+.description {
     color: var(--dark);
     font-size: 0.8em;
     margin: 20px 0px;
 }
-.explore-button{
+
+.explore-button {
     background-color: var(--orange);
     color: var(--white);
     font-weight: 600;
@@ -66,47 +81,151 @@ li{
     padding: 15px 20px;
     border-radius: 5px;
 }
-.banner img{
+
+.banner img {
     width: 100%;
     padding: 30px 0px;
 }
+
 /* feature section styles */
-.features{
-    display: flex;   
+.features {
+    display: flex;
     margin-top: 20px;
     margin-left: 20px;
     align-items: center;
     gap: 60px;
 }
-.feature-thumbnails{
+
+.feature-thumbnails {
     width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 15px;
     grid-column-gap: 15px;
 }
-.feature-thumbnails img{
+
+.feature-thumbnails img {
     width: 100%;
-   
+
 }
 
-.semi-dark-text{
+.semi-dark-text {
     color: var(--dark);
     font-size: 2em;
 }
-.dark-text{
+
+.dark-text {
     color: #131313;
 }
-.feature-text{
+
+.feature-text {
     color: var(--orange);
 }
+
 /* feature-list section */
-/* @media screen and (max-width: 576px) {
+.all-features{
+    margin-top: 4em;
+    position: relative;
+}
+.features-list {
+    display: flex;      
+    gap: 40px;
+}
+
+.feature-title {
+    color: var(--black);
+    font-size: 2em;
+    border-left: 3px solid var(--orange);
+    padding-left: 5px;
+}
+
+.feature-box {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
+    /* box-shadow: 0px 10px 30px gray; */
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    
+}
+.feature-name{
+    padding-bottom: 0.7em;
+}
+
+.feature-description{
+    color: var(--dark);
+    font-size: 0.8em;   
+}
+.our-feature{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 500px;
+}
+
+.feature-image {
+    width: 100%;
+
+}
+.year{
+    font-size: 2em;
+}
+.year-btn{
+    position: absolute;
+    left: 400px;
+    bottom: 30px;
+}
+/* some facts styles */
+.achievement-section{
+    margin: 2em 0;
+}
+.achievements{
+    display: flex;
+    justify-content: space-around;
+}
+.achievement{
+    border: 1px solid var(--orange);
+    padding: 1em;
+    text-align: center;
+    border-radius: 0.3em;
+}
+.prize{
+    font-size: 0.6em;
+    color: var(--dark);
+}
+/* sponsors styles */
+.sponsor-title{
+    text-align: center;
+}
+.sponsors{
+    display: flex;
+    gap: 3em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.sponsors img{
+    width: 100%;
+}
+/* footer */
+.footer{
+   height: 50px;
+   display: flex;
+   align-items: center;
+   border-radius: 5px;
+   justify-content: center;
+}
+.footer-text{
+    color: var(--dark);
+    font-size: 0.8em;
+}
+
+ /* @media screen and (max-width: 576px) {
     .features{
         flex-direction: column-reverse;
     }
     .feature-thumbnails{
         grid-template-columns: repeat(1, 1fr);
     }
-} */
-
+}  */
