@@ -100,6 +100,7 @@ li{
 .feature-text{
     color: var(--orange);
 }
+/* feature-list section */
 /* @media screen and (max-width: 576px) {
     .features{
         flex-direction: column-reverse;
